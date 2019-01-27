@@ -25,12 +25,13 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
-gem 'mysql2', '~> 0.3.18'
-gem 'therubyracer', :platform=>:ruby
+gem 'mysql2', :git => 'git://github.com/brianmario/mysql2.git'
+gem 'mini_racer'
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
   gem 'rails_layout'
+  gem 'byebug'
 end
 group :development, :test do
   gem 'pry-rails'
