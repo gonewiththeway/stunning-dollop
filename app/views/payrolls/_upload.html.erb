@@ -1,0 +1,9 @@
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title">Upload a CSV file</h5>
+      <%= form_tag url_for(controller: :payrolls,  action: :upload), method: :post, multipart: true do %>
+        <%= file_field_tag 'csv' %>
+        <%= submit_tag("Submit", :class => "btn btn-primary btn-sm") %>
+      <% end %>
+  </div>
+</div>

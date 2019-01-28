@@ -1,0 +1,30 @@
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>
+        Employee ID
+      </th>
+      <th>
+        Pay Period
+      </th>
+      <th>
+        Amount Paid
+      </th>
+    </tr>
+    <% @processed_data.each do |data| %>
+    <tr>
+      <td>
+        <%= data[:employee_id] %>
+      </td>
+      <td>
+        <%= data[:pay_period] %>
+      </td>
+      <td>
+        <%= data[:amount_paid] %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
